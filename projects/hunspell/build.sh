@@ -16,3 +16,4 @@
 ################################################################################
 
 $SRC/hunspell/oss-fuzz-build.sh
+rm -f $OUT/*.aff $OUT/*.dic $OUT/*.good $OUT/*.wrong $OUT/*.sug $OUT/*.morph

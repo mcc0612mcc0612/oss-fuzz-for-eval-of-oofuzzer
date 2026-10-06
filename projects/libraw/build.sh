@@ -15,12 +15,6 @@
 #
 ################################################################################
 
-# copy corpuses
-cp $SRC/libraw_cr2_fuzzer_seed_corpus.zip \
-    $SRC/libraw_nef_fuzzer_seed_corpus.zip \
-    $SRC/libraw_raf_fuzzer_seed_corpus.zip \
-    $OUT/
-
 # build project
 autoreconf --install
 ./configure --disable-examples

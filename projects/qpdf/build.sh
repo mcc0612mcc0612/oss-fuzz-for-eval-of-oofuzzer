@@ -31,3 +31,5 @@ popd
 
 # qpdf
 ./fuzz/oss-fuzz-build
+rm -f $OUT/*_seed_corpus.zip $OUT/*.dict
+find $OUT -maxdepth 1 -name '*.options' -exec sed -i '/^\s*dict\s*=/d' {} +

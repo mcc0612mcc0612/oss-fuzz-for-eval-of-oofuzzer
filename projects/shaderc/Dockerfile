@@ -18,9 +18,6 @@ FROM gcr.io/oss-fuzz-base/base-builder
 RUN apt-get update && apt-get install -y build-essential make cmake ninja-build
 
 
-RUN git clone https://github.com/KhronosGroup/glslang && \
-    mkdir -p $SRC/glsl_seed && \
-    cp $SRC/glslang/Test/*.frag $SRC/glsl_seed
 RUN git clone https://github.com/google/shaderc shaderc
 WORKDIR $SRC/shaderc
 
